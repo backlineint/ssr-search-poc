@@ -9,7 +9,7 @@ async function getData(id) {
 
   return res.json();
 }
-  
+
   export default async function SearchPage({ params }) {
     let data = null
     if(params.id) {
@@ -31,14 +31,14 @@ async function getData(id) {
         );
       });
     };
-  
-    return <div  className='flex flex-col p-3 w-2/3 mx-auto'>
+
+    return <div id="results" className='flex flex-col p-3 w-2/3 mx-auto'>
+      <p>(Results Layout)</p>
     <span className="text-2xl">Search Page</span>
-        <SearchInput />
         { data ? <RenderCurrentItems currentItems={data.data}/> :
          <div>
             <h1 className="text-xl">Experiment searching our test data. The backend being queried is based off of the drupal umami dataset.</h1>
-            <p>Example searches with mathcing results:</p> 
+            <p>Example searches with mathcing results:</p>
             <ul className="list-disc">
                 <li>milk</li>
                 <li>chocolate</li>

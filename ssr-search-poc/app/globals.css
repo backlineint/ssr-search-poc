@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#header {
+  background-color: red;
+  color: white;
+}
+#header h1 {
+  font-size: 4rem;
+}
+
+#search {
+  background-color: blue;
+  color: white;
+}
+
+#results {
+  background-color: whitesmoke;
+  color: black;
+}
+
+#loader {
+  background-color: green;
+  color: white;
+  font-size: 4rem;
+}
